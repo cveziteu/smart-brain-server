@@ -1,0 +1,24 @@
+{
+  "name": "smart-brain-server",
+  "version": "1.0.0",
+  "description": "smart-brain-app server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cveziteu/smart-brain-server.git"
+  },
+  "author": "Constantin Veziteu",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
