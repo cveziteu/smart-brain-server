@@ -1,13 +1,13 @@
 // ExpressJS
 const express = require('express');
 
-// Body Parser
+//!     Body Parser
 const bodyParser = require('body-parser');
 
-// CORS
+//!     CORS
 const cors = require('cors');
 
-//Knex
+//!     Knex
 const knex = require('knex');
 const db = knex({
     client: 'pg',
@@ -19,11 +19,11 @@ const db = knex({
     }
 });
 
-// bcrypt
+//!     bcrypt
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
-// Main app
+//!     Main app
 const app = express();
 // adding bodyparser and CORS to our app
 app.use(bodyParser.json());
