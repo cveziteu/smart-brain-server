@@ -114,8 +114,8 @@ app.get('/profile/:id', (request, response) => {
 })
 
 
-//?                                                                                                 /image
-app.put('/image', (request, response) => {
+//?                                                                                                 /entries
+app.put('/entries', (request, response) => {
     const {id, imageUrl} = request.body;
     db.transaction(trx => {
         trx('entries')
