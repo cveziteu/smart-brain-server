@@ -12,8 +12,10 @@ const knex = require('knex');
 const db = knex({
     client: 'pg',
     connection: {
-        connectionString: process.env.DATABASE_URL,
-        ssl: true
+        host: '127.0.0.1',
+        user: 'admin',
+        password: 'test',
+        database: 'smart-brain'
     }
 });
 
@@ -162,7 +164,7 @@ app.post('/imagenoface', (request, response) => {
 
 
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log(`Server is running on port ${process.env.PORT}`);
+app.listen(3001, () => {
+    console.log('Server is running on port 3001');
 })
 
